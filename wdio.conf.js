@@ -1,4 +1,4 @@
-import { hooks } from "./features/hooks.js";
+import { hooks } from "./features/utils/hooks.js";
 
 export const config = {
   //
