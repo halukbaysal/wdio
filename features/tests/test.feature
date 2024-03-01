@@ -1,12 +1,11 @@
 @test
-Feature: Experimental test
+Feature: Login Test
   It is a test feature to validate webdriverIO framework
   works as with Angular project
 
-  @smoke @123456
+  @smoke
   Scenario: Check elements on login page
-    Given User navigates to CWC site
-    When User enters "admin" and "password" as credentials
-    Then Text value of "loginPage" "loginButton" is "Login"
- 
- 
+    Given User navigates to login page 
+    When User enters "standard_user" into "loginPage" "username"
+    And User enters "secret_sauce" into "loginPage" "password"
+    And User clicks "loginPage" "loginButton"

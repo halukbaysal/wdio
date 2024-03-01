@@ -6,7 +6,7 @@ import pkg from "robotjs";
 import { When } from "@wdio/cucumber-framework";
 import { clickElement } from "../action/clickElement.js";
 import { checkElement } from "../action/checkElement.js";
-import { setInputValue } from "../action/setValue.js";
+import { setInputValue } from "../action/setValue.js"; 
 import { dragDrop } from "../action/dragDrop.js";
 const { typeString, keyTap } = pkg
 
@@ -50,15 +50,4 @@ When("User uploads {string} file", async (fileName) => {
   const filePath = `${fileName}`;
   pkg.typeString(filePath);
   pkg.keyTap("enter");
-});
- 
-
-/**
- * This step is used to redact on image
- * 
- * Example syntax
- * User redacts "annotatePage" "image" to 100 150 
- */
-When("User redacts {string} {string} to {int} {int}", async (page, selector, targetX, targetY) => {
-  await dragDrop(page, selector, targetX, targetY);
-});
+}); 

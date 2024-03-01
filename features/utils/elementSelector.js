@@ -5,7 +5,6 @@ export const elementSelector = async (page, selector) => {
     selector != null
       ? await $(eval(`${page}.${selector}`))
       : await $(page);
-  return elem;
-
+  return elem; 
 };
 

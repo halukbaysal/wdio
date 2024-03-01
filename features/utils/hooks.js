@@ -106,7 +106,7 @@ export const hooks = {
   afterStep: async (result) => { 
     if (result.error) {
       browser.takeScreenshot();
-    }
+    } 
   },
   /**
    *

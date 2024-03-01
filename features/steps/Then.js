@@ -6,6 +6,7 @@ import { Then, DataTable } from "@wdio/cucumber-framework";
 import { checkElement } from "../action/checkElement.js"; 
 import { checkTextValue } from "../action/checkTextValue.js";  
 import { waitValue } from "../action/waitValue.js";
+import { clickElement } from "../action/clickElement.js";
 
 Then("Take a screenshot", async () => {
   await browser.takeScreenshot();

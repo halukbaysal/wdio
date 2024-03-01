@@ -6,13 +6,7 @@ export const config = {
   // Runner Configuration
   // ====================
   // WebdriverIO supports running e2e tests as well as unit and component tests.
-  runner: "local",
-  autoCompileOpts: {
-    tsNodeOpts: {
-      project: "./tsconfig.json",
-    },
-  },
-
+  runner: "local",  
   //
   // ==================
   // Specify Test Files
@@ -105,7 +99,7 @@ export const config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: "",
+  baseUrl: "https://www.saucedemo.com/v1/",
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -115,7 +109,7 @@ export const config = {
   connectionRetryTimeout: 120000,
   //
   // Default request retries count
-  connectionRetryCount: 3,
+  connectionRetryCount: 1,
   //
   // Test runner services
   // Services take over a specific job you don't want to take care of. They enhance
